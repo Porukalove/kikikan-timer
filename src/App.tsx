@@ -133,7 +133,6 @@ return age;
 }
 
 function getGrade(birthday: string): string {
-const birth = new Date(`${birthday}T00:00:00`);
 const now = new Date();
 
 const currentSchoolYear =
@@ -149,10 +148,6 @@ return `高校${grade - 9}年`;
 
 if (grade >= 7 && grade <= 9) {
 return `中学${grade - 6}年`;
-}
-
-if (grade >= 1 && grade <= 6) {
-return `小学${grade}年`;
 }
 
 return "";
